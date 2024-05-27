@@ -1,0 +1,34 @@
+name: "librespot"
+version: "20240526-0.5.0-dev"
+slug: "librespot"
+description: >-
+  "Spotify Librespot Addon"
+arch:
+  - amd64
+url: "website with more information about the add-on (e.g., a forum thread for support)"
+map:
+  - share:rw
+image: jbollineni/image-amd64-addon-librespot
+boot: manual
+options:
+  LIBRESPOT_NAME: "HA-Librespot"
+  LIBRESPOT_USER: ""
+  LIBRESPOT_PASSWORD: ""
+  LIBRESPOT_INITVOL: "75"
+  LIBRESPOT_DEVICE: "/share/snapcast/fifo"
+  LIBRESPOT_BITRATE: "320"
+  LIBRESPOT_DEVICETYPE: "avr"
+  LIBRESPOT_BACKEND: "pipe"
+schema:
+  LIBRESPOT_NAME: "str"
+  LIBRESPOT_USER: "str"
+  LIBRESPOT_PASSWORD: "str"
+  LIBRESPOT_INITVOL: "str"
+  LIBRESPOT_DEVICE: "str"
+  LIBRESPOT_BITRATE: "str"
+  LIBRESPOT_DEVICETYPE: "str"
+  LIBRESPOT_BACKEND: "str"
+
+
+
+
